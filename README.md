@@ -3,7 +3,7 @@ This software has been built on arm32v7 arch (armv7l) on Alpine Linux.
 It can be used in docker, or directly on Alpine Linux hosts.
 
 You will need some basic libraries installed, you can do that with the below command.
-apk --no-cache add libgcc libstdc++ wxgtk-base libusb alsa-lib wiringpi
+apk --no-cache add libgcc libstdc++ wxgtk-base libusb alsa-lib wiringpi i2c-tools
 
 These binaries are compiled using the sources available from here: https://github.com/g4klx and here: https://github.com/juribeparada
 
