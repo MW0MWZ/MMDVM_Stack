@@ -7,4 +7,4 @@ apk --no-cache add libgcc libstdc++ wxgtk-base libusb alsa-lib
 
 These binaries are compiled using the sources available from here: https://github.com/g4klx and here: https://github.com/juribeparada
 
-New binaryies are compiled and pushed to git each day the source repositories are changed.
+New binaries are compiled and pushed to git each day the source repositories are changed.
