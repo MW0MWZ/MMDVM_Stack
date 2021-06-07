@@ -6,8 +6,3 @@ These binaries are compiled using the sources available from here: https://githu
 
 New binaries are compiled and pushed to git each day the source repositories are changed.
 
-In order to run these binaries, you will need to have some pre-requisites installed:
-```
-apt install libgcc1 libstdc++6 libwxbase3.0-0v5 libusb-1.0-0 libasound2 i2c-tools
-```
-
