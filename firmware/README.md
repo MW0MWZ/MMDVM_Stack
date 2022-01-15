@@ -85,3 +85,91 @@ Nucleo144 F767ZI
 
     openocd -f /usr/local/share/openocd/scripts/interface/stlink-v2-1.cfg -f /usr/local/share/openocd/scripts/target/stm32f7x.cfg -c "program F767ZI.elf verify reset exit"
 
+Repeater-Builder V1 Board
+
+    apt-get remove stm32flash
+
+    mkdir -p /usr/loca/src
+    cd /ust/local/src
+    git clone https://git.code.sf.net/p/stm32flash/code stm32flash
+    cd stm32flash
+    make
+    make install
+
+    systemctl stop pistar-watchdog.timer
+    systemctl stop pistar-watchdog.service
+    systemctl stop mmdvmhost.timer
+    systemctl stop mmdvmhost.service
+
+    # Pi Hat
+    /usr/local/bin/stm32flash -w Repeater-Builder_V1.hex -v /dev/ttyAMA0
+
+    # USB Board
+    /usr/local/bin/stm32flash -w Repeater-Builder_V1.hex -v /dev/ttyUSB0
+
+Repeater-Builder V2 Board
+
+    apt-get remove stm32flash
+
+    mkdir -p /usr/loca/src
+    cd /ust/local/src
+    git clone https://git.code.sf.net/p/stm32flash/code stm32flash
+    cd stm32flash
+    make
+    make install
+
+    systemctl stop pistar-watchdog.timer
+    systemctl stop pistar-watchdog.service
+    systemctl stop mmdvmhost.timer
+    systemctl stop mmdvmhost.service
+
+    # Pi Hat
+    /usr/local/bin/stm32flash -w Repeater-Builder_V2.hex -v /dev/ttyAMA0
+
+    # USB Board
+    /usr/local/bin/stm32flash -w Repeater-Builder_V2.hex -v /dev/ttyUSB0
+
+Repeater-Builder V3 Board
+
+    apt-get remove stm32flash
+
+    mkdir -p /usr/loca/src
+    cd /ust/local/src
+    git clone https://git.code.sf.net/p/stm32flash/code stm32flash
+    cd stm32flash
+    make
+    make install
+
+    systemctl stop pistar-watchdog.timer
+    systemctl stop pistar-watchdog.service
+    systemctl stop mmdvmhost.timer
+    systemctl stop mmdvmhost.service
+
+    # Pi Hat
+    /usr/local/bin/stm32flash -v -w Repeater-Builder_V3.bin -g 0x0 -R -i 20,-21,21:-20,21 /dev/ttyAMA0
+
+    # USB Board
+    /usr/local/bin/stm32flash -v -w Repeater-Builder_V3.bin /dev/ttyUSB0
+
+Repeater-Builder V4 Board
+
+    apt-get remove stm32flash
+
+    mkdir -p /usr/loca/src
+    cd /ust/local/src
+    git clone https://git.code.sf.net/p/stm32flash/code stm32flash
+    cd stm32flash
+    make
+    make install
+
+    systemctl stop pistar-watchdog.timer
+    systemctl stop pistar-watchdog.service
+    systemctl stop mmdvmhost.timer
+    systemctl stop mmdvmhost.service
+
+    # Pi Hat
+    /usr/local/bin/stm32flash -v -w Repeater-Builder_V4.bin -g 0x0 -R -i 20,-21,21:-20,21 /dev/ttyAMA0
+
+    # USB Board
+    /usr/local/bin/stm32flash -v -w Repeater-Builder_V4.bin /dev/ttyUSB0
+
