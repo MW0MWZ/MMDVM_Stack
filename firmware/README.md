@@ -177,3 +177,23 @@ Repeater-Builder V4 Board
     # USB Board
     /usr/local/bin/stm32flash -v -w Repeater-Builder_V4.bin /dev/ttyUSB0
 
+Repeater-Builder V5 Board
+
+    apt-get remove stm32flash
+
+    mkdir -p /usr/loca/src
+    cd /ust/local/src
+    git clone https://git.code.sf.net/p/stm32flash/code stm32flash
+    cd stm32flash
+    make
+    make install
+
+    systemctl stop pistar-watchdog.timer
+    systemctl stop pistar-watchdog.service
+    systemctl stop mmdvmhost.timer
+    systemctl stop mmdvmhost.service
+
+    # Pi Hat
+
+    # USB Board
+
