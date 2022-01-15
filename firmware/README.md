@@ -3,9 +3,13 @@ These binaries are compiled using the sources available from here: https://githu
 
 New binaries are compiled and pushed to git each day the source repositories are changed.
 
-Please remember to set your "UARTSpeed" to the correct value (probably 460800) in the expert editor: http://pi-star/admin/expert/edit_mmdvmhost.php
+Please remember to set your "UARTSpeed" to the correct value (probably 460800, except for older  
+lower spec boards like the Repeater-Builder V1 and V2 that run at 115200)  
+in the expert editor: http://pi-star/admin/expert/edit_mmdvmhost.php
 
-**Note - these firmwares should be concidered ALPHA release currently, this is very early in the test phase.
+** Note - these firmwares should be concidered ALPHA release / un-tested currently,  
+this is very early in the test phase, these are not likly to brick your modem, but  
+they are only to be used at YOUR risk.
 
 ZUM Radio-MMDVM 0.9
 
