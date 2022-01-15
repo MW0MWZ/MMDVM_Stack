@@ -27,9 +27,7 @@ ZUM Radio-MMDVM 0.9
     systemctl stop mmdvmhost.timer
     systemctl stop mmdvmhost.service
 
-    /usr/local/bin/stm32flash -i 20,-21,21:-20,21 /dev/ttyAMA0
-    /usr/local/bin/stm32flash -v -w ZUM_Radio-MMDVM_0.9.bin -g 0x0 -R /dev/ttyAMA0
-
+    /usr/local/bin/stm32flash -v -w ZUM_Radio-MMDVM_0.9.bin -g 0x0 -R -i 20,-21,21:-20,21 /dev/ttyAMA0
     /usr/local/sbin/pistar-mmdvmhshatreset
 
 ZUM Radio-MMDVM 1.0
@@ -48,9 +46,7 @@ ZUM Radio-MMDVM 1.0
     systemctl stop mmdvmhost.timer
     systemctl stop mmdvmhost.service
 
-    /usr/local/bin/stm32flash -i 20,-21,21:-20,21 /dev/ttyAMA0
-    /usr/local/bin/stm32flash -v -w ZUM_Radio-MMDVM_1.0.bin -g 0x0 -R /dev/ttyAMA0
-
+    /usr/local/bin/stm32flash -v -w ZUM_Radio-MMDVM_1.0.bin -g 0x0 -R -i 20,-21,21:-20,21 /dev/ttyAMA0
     /usr/local/sbin/pistar-mmdvmhshatreset
 
 Nucleo64 F446RE
@@ -151,6 +147,7 @@ Repeater-Builder V3 Board
 
     # Pi Hat
     /usr/local/bin/stm32flash -v -w Repeater-Builder_V3.bin -g 0x0 -R -i 20,-21,21:-20,21 /dev/ttyAMA0
+    /usr/local/sbin/pistar-mmdvmhshatreset
 
     # USB Board
     /usr/local/bin/stm32flash -v -w Repeater-Builder_V3.bin /dev/ttyUSB0
@@ -173,6 +170,7 @@ Repeater-Builder V4 Board
 
     # Pi Hat
     /usr/local/bin/stm32flash -v -w Repeater-Builder_V4.bin -g 0x0 -R -i 20,-21,21:-20,21 /dev/ttyAMA0
+    /usr/local/sbin/pistar-mmdvmhshatreset
 
     # USB Board
     /usr/local/bin/stm32flash -v -w Repeater-Builder_V4.bin /dev/ttyUSB0
@@ -193,7 +191,6 @@ Repeater-Builder V5 Board
     systemctl stop mmdvmhost.timer
     systemctl stop mmdvmhost.service
 
-    # Pi Hat
-
     # USB Board
+    /usr/local/bin/stm32flash -w Repeater-Builder_V5.bin -S 0x8000000 -R /dev/ttyUSB0
 
