@@ -5,6 +5,8 @@ New binaries are compiled and pushed to git each day the source repositories are
 
 Please remember to set your "UARTSpeed" to the correct value (probably 460800) in the expert editor: http://pi-star/admin/expert/edit_mmdvmhost.php
 
+**Note - these firmwares should be concidered ALPHA release currently, this is very early in the test phase.
+
 ZUM Radio-MMDVM 0.9
 
     apt-get remove stm32flash
