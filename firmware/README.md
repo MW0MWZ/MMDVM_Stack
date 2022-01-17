@@ -194,3 +194,43 @@ Repeater-Builder V5 Board
     # USB Board
     /usr/local/bin/stm32flash -w Repeater-Builder_V5.bin -S 0x8000000 -R /dev/ttyUSB0
 
+MMDVM_RPT_Hat 0.2 Board
+
+    apt-get remove stm32flash
+
+    mkdir -p /usr/loca/src
+    cd /ust/local/src
+    git clone https://git.code.sf.net/p/stm32flash/code stm32flash
+    cd stm32flash
+    make
+    make install
+
+    systemctl stop pistar-watchdog.timer
+    systemctl stop pistar-watchdog.service
+    systemctl stop mmdvmhost.timer
+    systemctl stop mmdvmhost.service
+
+    # Pi Hat
+    /usr/local/bin/stm32flash -v -w MMDVM_RPT_Hat_0.2.bin -g 0x0 -R -i 20,-21,21:-20,21 /dev/ttyAMA0
+    /usr/local/sbin/pistar-mmdvmhshatreset
+
+MMDVM_RPT_Hat 0.3 Board
+
+    apt-get remove stm32flash
+
+    mkdir -p /usr/loca/src
+    cd /ust/local/src
+    git clone https://git.code.sf.net/p/stm32flash/code stm32flash
+    cd stm32flash
+    make
+    make install
+
+    systemctl stop pistar-watchdog.timer
+    systemctl stop pistar-watchdog.service
+    systemctl stop mmdvmhost.timer
+    systemctl stop mmdvmhost.service
+
+    # Pi Hat
+    /usr/local/bin/stm32flash -v -w MMDVM_RPT_Hat_0.3.bin -g 0x0 -R -i 20,-21,21:-20,21 /dev/ttyAMA0
+    /usr/local/sbin/pistar-mmdvmhshatreset
+
