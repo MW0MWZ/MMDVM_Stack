@@ -16,7 +16,7 @@ ZUM Radio-MMDVM 0.9
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
@@ -35,7 +35,7 @@ ZUM Radio-MMDVM 1.0
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
@@ -52,7 +52,7 @@ ZUM Radio-MMDVM 1.0
 Nucleo64 F446RE
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://github.com/ntfreak/openocd
     cd openocd
     ./bootstrap
@@ -70,7 +70,7 @@ Nucleo64 F446RE
 Nucleo144 F767ZI
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://github.com/ntfreak/openocd
     cd openocd
     ./bootstrap
@@ -90,7 +90,7 @@ Repeater-Builder V1 Board
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
@@ -112,7 +112,7 @@ Repeater-Builder V2 Board
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
@@ -134,7 +134,7 @@ Repeater-Builder V3 Board
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
