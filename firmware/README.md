@@ -157,7 +157,7 @@ Repeater-Builder V4 Board
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
@@ -180,7 +180,7 @@ Repeater-Builder V5 Board
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
@@ -199,7 +199,7 @@ MMDVM_RPT_Hat 0.2 Board
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
@@ -219,7 +219,7 @@ MMDVM_RPT_Hat 0.3 Board
     apt-get remove stm32flash
 
     mkdir -p /usr/loca/src
-    cd /ust/local/src
+    cd /usr/local/src
     git clone https://git.code.sf.net/p/stm32flash/code stm32flash
     cd stm32flash
     make
