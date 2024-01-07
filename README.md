@@ -1,6 +1,5 @@
 # MMDVM Software Stack
-This repo contains software that has been built on multiple platforms, specifically to run on Alpine Linux and RasPiOS.
-It can be used in docker, or directly on Alpine Linux or Raspberry Pi hosts.
+This repo contains software that has been built on Pi-Star 3.x and 4.1.x.
 
 The README.md in each branch will guide you on what each build requires.
 
